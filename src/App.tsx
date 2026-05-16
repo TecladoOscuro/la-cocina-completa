@@ -19,7 +19,7 @@ export default function App() {
 
   return (
     <div className="flex flex-col h-full bg-[#0a0a0f]">
-      <div className="flex-1 relative overflow-hidden" style={{ paddingBottom: '56px' }}>
+      <div className="flex-1 relative overflow-hidden">
         {apps.map((app, i) => (
           <div
             key={app.id}

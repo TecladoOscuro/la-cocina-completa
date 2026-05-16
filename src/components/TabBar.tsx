@@ -10,7 +10,7 @@ interface TabBarProps {
 export const TabBar = memo(function TabBar({ apps, activeIndex, onTabChange }: TabBarProps) {
   return (
     <nav
-      className="fixed bottom-0 left-0 right-0 z-50 flex justify-around items-center h-14 bg-[#0a0a0f]/80 backdrop-blur-[20px] backdrop-saturate-[180%] border-t border-white/[0.06]"
+      className="flex justify-around items-center shrink-0 h-14 bg-[#0a0a0f]/80 backdrop-blur-[20px] backdrop-saturate-[180%] border-t border-white/[0.06]"
       style={{ WebkitBackdropFilter: 'blur(20px) saturate(180%)' }}
     >
       {apps.map((app, i) => {
